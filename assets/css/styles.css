@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 100 900; /* Define el rango de peso disponible */
+    font-style: normal; /* Puedes incluir 'italic' si la fuente lo soporta */
+}
+:root {
+    --green:hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --grey--700:hsl(0, 0%, 20%);
+    --grey--800:hsl(0, 0%, 12%);
+    --grey--900:hsl(0, 0%, 8%);
+
+    --paragraph--size: 0.875rem;
+    --weight--400:400;
+    --weight--600:600;
+    --weight--700:700;
+}
+body {
+    font-family: Inter;
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+    background-color: var(--grey--900);
+}
+
+.profile-card {
+    background-color: var(--grey--800);
+    width: 100%;
+    height: auto;
+    max-width: 25rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.user-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user-info .avatar {
+    width: 5.75rem;
+    height: 5.75rem;
+    border-radius: 50%;
+}
+
+.user-info .personal-info {
+    display: grid;
+    gap: 0.75rem;
+    
+}
+
+.user-info .personal-info .username {
+    font-size: 1.5rem;
+}
+
+.user-info .personal-info .address {
+    font-weight: var(--weight--600);
+    font-size: var(--paragraph--size);
+    color: var(--green);
+}
+
+.user-info .description {
+    font-weight: var(--weight--400);
+    font-size: var(--paragraph--size);
+}
+
+.social-media ul {
+    list-style: none;
+    font-weight: var(--weight--700);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-media ul .nav-link {
+    background-color: var(--grey--700);
+    color: var(--white);
+
+    font-size: var(--paragraph--size);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.social-media ul .nav-link:hover {
+    background-color: var(--green);
+    color: var(--grey--700);
+
+}
+
+.social-media ul .nav-link a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--grey--800);
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+}
+.attribution a { color: var(--green) }
+
+@media (min-width: 400px) {
+    .profile-card {
+        padding: 2.5rem;
+    }
+}
