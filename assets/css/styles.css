@@ -82,7 +82,7 @@ main {
     font-size: var(--paragraph--size);
 }
 
-.social-media ul {
+.social-media {
     list-style: none;
     font-weight: var(--weight--700);
     display: flex;
@@ -90,7 +90,7 @@ main {
     gap: 1rem;
 }
 
-.social-media ul .nav-link {
+.social-media .nav-link {
     background-color: var(--grey--700);
     color: var(--white);
 
@@ -99,13 +99,13 @@ main {
     border-radius: 0.5rem;
 }
 
-.social-media ul .nav-link:hover {
+.social-media .nav-link:hover {
     background-color: var(--green);
     color: var(--grey--700);
 
 }
 
-.social-media ul .nav-link a {
+.social-media .nav-link a {
     display: block;
     padding: 1rem;
     text-decoration: none;
